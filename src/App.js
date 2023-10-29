@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { deleteImage, getImagesData, uploadImage } from "./server/imagesRequests";
 function App() {
   // const URL = "https://photos-storage-yis.s3.eu-west-1.amazonaws.com/"
-  const URL = "http://localhost:3030/get-image"
+  const URL = "http://cloud-images-env.eba-spme8zp4.eu-west-1.elasticbeanstalk.com/get-image"
 
   const [images, setImages] = useState([])
 

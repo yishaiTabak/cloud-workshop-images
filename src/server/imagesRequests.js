@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const URL = "http://localhost:3030/"
+const URL = "http://cloud-images-env.eba-spme8zp4.eu-west-1.elasticbeanstalk.com/"
 
 export const uploadImage = async (formData) =>{
     try{
