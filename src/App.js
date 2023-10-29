@@ -39,7 +39,7 @@ function App() {
         <input type="file" name="image" />
         <button type="submit">submit</button>
       </form>
-      {images.map(image=> <div key={image._id}>
+      {images?.length > 0 && images.map(image=> <div key={image._id}>
         <h3>{image.originalName}</h3>
         <img src={URL+`?key=${image.key}&name=${image.originalName}`} alt={image.originalName} />
         <button onClick={()=>{onClickDelete(image._id,image.key)}}>Delete {image.originalName}</button>
