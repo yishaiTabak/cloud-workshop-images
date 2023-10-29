@@ -1,9 +1,7 @@
 version: 0.2
 
 phases:
-  install:
-    runtime-versions:
-      nodejs: 14  # Replace with your desired Node.js version
+  pre_build:
     commands:
       - npm install
   build:
